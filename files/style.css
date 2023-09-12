@@ -1,0 +1,259 @@
+@font-face {
+    font-family: 'Activ Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./AktivGrotesk-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Activ Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./AktivGrotesk-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Activ Grotesk';
+    font-style: normal;
+    font-weight: 800;
+    src: url('./AktivGrotesk-XBold.ttf');
+}
+
+@font-face {
+    font-family: 'Activ Grotesk';
+    font-style: normal;
+    font-weight: 900;
+    src: url('./AktivGrotesk-Black.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    
+    font-family: "Activ Grotesk", sans-serif;
+    text-align: center;
+}
+
+.main-bg {
+    background-image: linear-gradient(180deg, white, #F4F4F4);
+    width: 100%;
+}
+
+.main, .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 480px;
+    padding: 2rem;
+    margin: auto;
+}
+
+img {
+    width: 100px;
+}
+
+h1 {
+    font-family: "Activ Grotesk", sans-serif;
+    color: #699C21;
+    font-size: 1.4rem;
+    font-weight: 800;
+    -webkit-text-stroke: 0.02em #699C21;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin: 0 0 1.8rem;
+}
+
+h1.main {
+    padding: 0;
+}
+
+.as-seen {
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.gummies {
+    width: 60%;
+    margin: 1rem 0 1.2rem;
+}
+
+video, .thumbnail {
+    border-radius: 12px;
+    width: 85%;
+}
+
+.video-thumbnail {
+    position: relative;
+    margin: auto;
+    width: 85%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.thumbnail {
+    width: 100%;
+    filter: brightness(90%);
+    transition: 200ms;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    transform: translate3d(-50%, -50%, 0);
+    transition: 200ms;
+}
+
+.video-thumbnail:hover .thumbnail {
+    filter: brightness(100%);
+    transition: 200ms;
+}
+
+.video-thumbnail:hover .play-button {
+    width: 30%;
+}
+
+.cta-button {
+    border-radius: 100rem;
+    color: white;
+    background-color: #699C21;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    width: 100%;
+    padding: 1rem;
+    margin: 2.2rem 0;
+    transition: 200ms;
+}
+
+.cta-button:hover {
+    background-color: #83b341;
+}
+
+.footer-bg {
+    color: white;
+    background-color: #EC915E;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer {
+    padding-bottom: 1rem;
+}
+
+.footer h1 {
+    letter-spacing: 0.03em;
+    color: white;
+}
+
+.testimonial {
+    width: 100%;
+}
+
+.testimonial img {
+    width: 240px;
+}
+
+.testimonial ul, .testimonial li {
+    padding: 0;
+}
+
+.testimonial ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.testimonial li {
+    position: absolute;
+    top: 0;
+    list-style-type: none;
+    min-width: 100%;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 1.6;
+    transition: 250ms ease-in-out;
+}
+
+.testimonial strong {
+    font-weight: 800;
+}
+
+.slider-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+}
+
+.slider-navigation img {
+    width: 4rem;
+}
+
+.slider-navigation .inactive {
+    opacity: 40%;
+    cursor: not-allowed;
+}
+
+.slider-navigation a {
+    padding: 0.6rem;
+    cursor: pointer;
+}
+
+.current-slide {
+    left: 0;
+}
+
+.testimonial-before {
+    left: 100%;
+}
+
+.testimonial-after {
+    left: -110%;
+}
+
+.footer .cta-button {
+    color: #EC915E;
+    background-color: white;
+    margin-top: 3.8rem;
+    margin-bottom: 1rem;
+}
+
+.footer .cta-button:hover {
+    background-color: #f1ece8;
+}
+
+.footer hr {
+    width: 100%;
+    opacity: 40%;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.footer .privacy-terms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+}
+
+.footer .privacy-terms a {
+    color: white;
+    font-weight: 300;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
