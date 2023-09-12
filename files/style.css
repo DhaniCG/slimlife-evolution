@@ -63,7 +63,7 @@ img {
 h1 {
     font-family: "Activ Grotesk", sans-serif;
     color: #699C21;
-    font-size: 4.8vw;
+    font-size: 1.4rem;
     font-weight: 800;
     -webkit-text-stroke: 0.02em #699C21;
     letter-spacing: 0.02em;
@@ -256,4 +256,10 @@ video, .thumbnail {
     font-weight: 300;
     font-size: 0.8rem;
     text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 4.8vw;
+    }
 }
